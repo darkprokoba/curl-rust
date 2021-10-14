@@ -17,7 +17,7 @@ if [ -z "$NO_RUN" ]; then
     RUSTFLAGS=-Clink-dead-code \
     cargo run --manifest-path systest/Cargo.toml --target $TARGET
     RUSTFLAGS=-Clink-dead-code \
-    cargo run --manifest-path systest/Cargo.toml --target $TARGET --features curl-sys/static-curl,curl-sys/protocol-ftp,poll_7_68_0
+    cargo run --manifest-path systest/Cargo.toml --target $TARGET --features curl-sys/static-curl,curl-sys/protocol-ftp,curl-sys/poll_7_68_0
 
     cargo doc --no-deps --target $TARGET
     cargo doc --no-deps -p curl-sys --target $TARGET
